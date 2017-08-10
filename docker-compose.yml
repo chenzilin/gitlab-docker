@@ -1,0 +1,11 @@
+gitlab:
+  image: "gitlab-docker:v1.0"
+  container_name: "gitlab-docker"
+  ports:
+    - "172.10.11.211:2024:22"
+    - "172.10.11.211:2082:80"
+    - "172.10.11.211:20445:443"
+  volumes:
+    - "./gitlab/config:/etc/gitlab"
+    - "./gitlab/logs:/var/log/gitlab"
+    - "./gitlab/data:/var/opt/gitlab"
