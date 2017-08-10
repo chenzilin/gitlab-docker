@@ -1,4 +1,6 @@
 gitlab/logs/
 gitlab/data/
+!gitlab/logs/.gitkeep
+!gitlab/data/.gitkeep
 gitlab/config/ssh*
 gitlab/config/gitlab-secrets.json
